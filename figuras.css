@@ -1,0 +1,107 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+
+        body {
+        font-family: 'Lato', sans-serif;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+
+        .page {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .contenedor{
+    position: absolute;
+        z-index: 1;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  height: 100%;
+        width: 100%;
+
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorhor1{
+     grid-column-start: 2; 
+}
+.contenedorhor2{
+     grid-column-start: 3; 
+}
+.contenedorhor3{
+     grid-column-start: 4; 
+}
+
+#cuadrado {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+}
+
+#triangulo {
+   
+    width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid blueviolet;
+}
+
+#circulo{
+    background-color: royalblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contenedorcuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contenedortriangulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.contenedorcirculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+form {
+    overflow: hidden;
+}
+ 
+label {
+    float: left;
+    width: 200px;
+    padding-right: 24px;
+}
+ 
+input {
+    float: left;
+    width: calc(100% - 200px);
+}
+ 
+button {
+    float: right;
+    width: calc(100% - 200px);
+}

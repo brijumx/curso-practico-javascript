@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figuras geométricas</title>
+    <link rel="stylesheet" href="figuras.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header class="header">
+            <h1>
+                Figuras Geométricas
+            </h1>
+            <p>Este es el primer taller del curso práctico de JavaScript</p>
+        </header>
+
+
+        <section>
+
+            <div class="contenedor">
+
+                <div class="contenedorhor1">
+
+                    <div class="contenedorcuadrado">
+
+                        <div id="cuadrado"></div>
+
+                        <h2>Calcula el área y perímetro de un cuadrado</h2>
+                        <form>
+                            <label for="lcuadrado">Ingrese la medida del lado</label>
+                            <input type="number" id="lcuadrado" style="width: 50px;">
+                            <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button>
+                            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+                <div class="contenedorhor2">
+                    <div class="contenedortriangulo">
+                        <div id="triangulo"></div>
+                        <h2>Calcula el área y perímetro de un triángulo</h2>
+                        <form>
+                            <label for="lado1">Ingrese la medida del lado 1</label>
+                            <input type="number" id="lado1" style="width: 50px;">
+                            <label for="lado2">Ingrese la medida del lado 2</label>
+                            <input type="number" id="lado2" style="width: 50px;">
+                            <label for="ladobase">Ingrese la medida de la base</label>
+                            <input type="number" id="ladobase" style="width: 50px;">
+                            <label for="altura">Ingrese la medida de la altura</label>
+                            <input type="number" id="altura" style="width: 50px;">
+                            <button type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
+                            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
+
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="contenedorhor3">
+                    <div class="contenedorcirculo">
+                        <div id="circulo"></div>
+                        <h2>Calcula el área y perímetro de un círculo</h2>
+                        <form>
+                            <label for="radio">Ingrese la medida del radio</label>
+                            <input type="number" id="radio" style="width: 50px;">
+                            <button type="button" onclick="calcularAreaCirculo()">Calcular Área</button>
+                            <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perímetro</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <script type="text/javascript" src="figuras.js"></script>
+</body>
+
+</html>
